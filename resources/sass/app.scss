@@ -1,0 +1,65 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+body {
+  margin: 0;
+  background-color: grey;
+}
+
+.header {
+  background-color: pink;
+}
+
+.footer {
+  background-color: purple;
+}
+
+.header,
+.footer {
+  color: white;
+  min-height: 10vh;
+}
+
+.header,
+.main,
+.footer {
+  display: flex;
+  flex-direction: column;
+  & > * {
+    margin: auto;
+  }
+}
+
+.main {
+  min-height: 50vh;
+  #app {
+    h1 {
+      text-align: center;
+    }
+    .container {
+      .card{
+        .title {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          i {
+            font-size: 20px;
+            cursor: pointer;
+          }
+        }
+        .card-body{
+            textarea {
+              width: 100%;
+            }
+          }
+      }
+    }
+
+  }
+}
